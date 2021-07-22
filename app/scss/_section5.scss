@@ -1,0 +1,95 @@
+@import "mixines";
+
+#section5 {
+  position: relative;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 100px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-bottom: 70px;
+  }
+
+  // ANIMATION
+
+  &.active {
+    .title {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.5s;
+    }
+
+    .content {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.6s;
+    }
+
+  }
+
+  .content, .title {
+    transform: translateX(-100vw);
+  }
+
+  .content, .title {
+    opacity: 0;
+    transition: 0.5s;
+    @media screen and (max-width: 768px) {
+      @include noAnimation;
+    }
+  }
+
+  // ANIMATION END
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+    .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      text-align: center;
+      color: #FFFFFF;
+      margin: 0 0 15px 0;
+      @media screen and (max-width: 768px) {
+        font-size: 30px;
+        line-height: 37px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      color: #9B99AD;
+      margin: 0 0 30px 0;
+      @media screen and (max-width: 600px) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    .image {
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      width: 220px;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

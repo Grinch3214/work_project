@@ -1,0 +1,124 @@
+@import "mixines";
+
+.footer {
+	width: 100%;
+	background: #020E30;
+	@media screen and (max-width: 768px) {
+		@include noAnimation;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		padding: 50px 30px;
+		@media screen and (max-width: 1024px) {
+			flex-direction: column;
+			padding: 40px 30px;
+		}
+	}
+
+	&__top {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 23px;
+		@media screen and (max-width: 768px) {
+			flex-wrap: wrap;
+			justify-content: center;
+			flex-direction: column;
+			margin-bottom: 0;
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media screen and (max-width: 768px) {
+			flex-wrap: wrap;
+			justify-content: center;
+			flex-direction: column;
+		}
+	}
+
+	&__logos {
+		display: flex;
+		align-items: center;
+		@media screen and (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+		img {
+			&:first-child {
+				margin-right: 18px;
+			}
+		}
+	}
+
+	&__menu {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		@media screen and (max-width: 1024px) {
+			margin-bottom: 20px;
+		}
+		@media screen and (max-width: 600px) {
+			flex-direction: column;
+		}
+	}
+
+	&__menu-item {
+		list-style-type: none;
+		margin-right: 30px;
+		@media screen and (max-width: 600px) {
+			margin-right: 0;
+			margin-bottom: 15px;
+			text-align: center;
+		}
+	}
+
+	&__menu-link {
+		font-size: 14px;
+		line-height: 16px;
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	&__socials {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		@media screen and (max-width: 1024px) {
+			margin-bottom: 30px;
+		}
+		@media screen and (max-width: 768px) {
+			margin: 0;
+		}
+	}
+
+	&__socials-item {
+		list-style-type: none;
+		margin-right: 10px;
+
+		img {
+			min-width: 24px;
+			min-height: 24px;
+		}
+	}
+
+	&__copyright {
+		p {
+			font-size: 12px;
+			line-height: 14px;
+			color: #97a4b5;
+			margin: 0;
+			@media screen and (max-width: 1024px) {
+				display: inline;
+			}
+			@media screen and (max-width: 600px) {
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+}

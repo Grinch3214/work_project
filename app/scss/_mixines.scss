@@ -1,0 +1,13 @@
+@mixin noAnimation {
+  transform: translateX(0) !important;
+  transition: 0s !important;
+  opacity: 1 !important;
+}
+@mixin transition {
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      transition-delay: #{0.6 + ($i * .1)}s
+    }
+  }
+}
+

@@ -1,0 +1,212 @@
+@import "mixines";
+
+#section0 {
+  position: relative;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 100px;
+  }
+// ANIMATION
+  &.active {
+    .content {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.8s;
+    }
+
+    .background {
+      opacity: 1;
+      transition-delay: 0.8s;
+    }
+
+    &.first {
+      .content {
+        opacity: 0;
+        animation: fadeInLeft 0.5s 1s forwards;
+      }
+
+      .background {
+        opacity: 0;
+        animation: fadeIn 0.5s 1s forwards;
+      }
+    }
+  }
+
+  .background {
+    opacity: 0;
+    transition: 0.5s;
+    @media screen and (max-width: 768px) {
+      @include noAnimation;
+    }
+  }
+
+  .content {
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-100%);
+    @media screen and (max-width: 768px) {
+      @include noAnimation;
+    }
+
+    img {
+      width: 100%;
+      max-width: 327px;
+      margin-bottom: 30px;
+    }
+  }
+  .intro-img {
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(100%);
+    @media screen and (max-width: 768px) {
+      @include noAnimation;
+    }
+  }
+
+// ANIMATION END
+
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../images/intro-bg.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      max-height: 1010px;
+    }
+    @media screen and (max-width: 600px) {
+      max-height: 750px;
+    }
+  }
+
+  .content {
+    position: relative;
+    padding-left: 90px;
+    z-index: 2;
+
+    align-self: flex-start;
+    @media screen and (max-width: 1200px) {
+      margin-top: -120px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 0;
+      padding-left: 0;
+      padding-top: 176px;
+      padding-bottom: 150px;
+    }
+    @media screen and (max-width: 600px) {
+      padding-top: 80px;
+    }
+
+    .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 59px;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      margin: 0 0 10px 0;
+      @media screen and (max-width: 600px) {
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+
+    .sub-title {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+      margin: 0 0 5px 0;
+      @media screen and (max-width: 600px) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    .description {
+      font-size: 14px;
+      line-height: 16px;
+      color: #FFFFFF;
+      margin: 0 0 30px 0;
+      &:first-child p{
+        text-transform: uppercase;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+
+      p {
+        &:first-child {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+          text-transform: uppercase;
+          color: #F4D400;
+          margin: 0 0 5px 0;
+        }
+        &:last-child {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          color: #FFFFFF;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .intro-img {
+    position: absolute;
+    top: -16%;
+    right: -226px;
+    @media screen and (max-width: 1200px) {
+      top: 10%;
+    }
+    @media screen and (max-width: 768px) {
+      top: 14%;
+    }
+
+
+    &--desktop {
+      display: block;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      display: none;
+      @media screen and (max-width: 768px) {
+        display: block;
+        position: relative;
+        top: -130px;
+        right: -145px;
+        min-height: 782px;
+      }
+      @media screen and (max-width: 600px) {
+        max-width: 401px;
+        min-height: 380px;
+        top: -50px;
+        right: -21px;
+      }
+    }
+  }
+
+  .btn {
+    @media screen and (max-width: 768px) {
+      max-width: 200px;
+      padding: 13px;
+    }
+  }
+
+}

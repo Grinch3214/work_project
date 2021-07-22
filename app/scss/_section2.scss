@@ -1,0 +1,88 @@
+@import "mixines";
+
+#section2 {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 100px;
+  }
+
+  // ANIMATION
+
+  &.active {
+    .content {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 1s;
+    }
+
+    .devices-img {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.8s;
+    }
+  }
+
+  .content, .devices-img {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    @media screen and (max-width: 768px) {
+      @include noAnimation;
+    }
+  }
+
+  // ANIMATION END
+
+  .container {
+    position: relative;
+    top: 30px;
+    max-width: 890px;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      top: 0;
+    }
+
+    .title {
+      font-family: "Averta Kyivstar", sans-serif;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      text-align: center;
+      color: #FFFFFF;
+      margin: 20px 0 10px 0;
+      @media screen and (max-width: 768px) {
+        font-size: 30px;
+        line-height: 37px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+    }
+
+    .description {
+      max-width: 688px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #9B99AD;
+      margin: 0 auto 30px auto;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .btn {
+      width: 185px;
+    }
+  }
+
+  .devices-img {
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      max-width: 600px;
+    }
+  }
+}

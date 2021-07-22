@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>StarBoost</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<a class="logo" href="./index.html">
+				<img class="logo__img" src="../images/logo.svg" alt="">
+			</a>
+			<nav class="header__navigation">
+				<ul class="header__menu">
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#">загрузки</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="./faq.html">faq</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#">помощь</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__logos">
+				<img src="../images/kyivstar-logo.svg" alt="kyivstar">
+				<span>&</span>
+				<img src="../images/boosteroid-logo.svg" alt="boosteroid">
+			</div>
+			<div class="language">
+				<div class="language__container">
+					<div class="language__overlay"></div>
+					<button class="language__item">
+						<img src="../images/langs/ru.svg" alt="ru">
+						<span>Русский</span>
+					</button>
+					<a href="../loadpage.html" class="language__item change-lang" data-lang="ru">
+						<img src="../images/langs/ua.svg" alt="ua">
+						<span>Українська</span>
+					</a>
+				</div>
+			</div>
+			<a href="#" class="btn btn--small">
+				Войти
+			</a>
+			<div class="burger">
+				<button class="burger__btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<nav class="burger__nav">
+					<ul class="burger__menu">
+						<li class="burger__menu-item">
+							<a class="burger__menu-link" href="#">загрузки</a>
+						</li>
+						<li class="burger__menu-item">
+							<a class="burger__menu-link" href="./faq.html">faq</a>
+						</li>
+						<li class="burger__menu-item">
+							<a class="burger__menu-link" href="#">помощь</a>
+						</li>
+					</ul>
+					<div class="language language--burger">
+						<div class="language__container">
+							<div class="language__overlay"></div>
+							<button class="language__item">
+								<img src="../images/langs/ru.svg" alt="ru">
+								<span>Русский</span>
+							</button>
+							<a href="../loadpage.html" class="language__item change-lang" data-lang="ua">
+								<img src="../images/langs/ua.svg" alt="ua">
+								<span>Українська</span>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main" id="loadpage">
+
+		<section class="load">
+			<div class="container">
+				<h1 class="load__title">Скачать Приложения</h1>
+				<p class="load__text">Для Ваших Устройств</p>
+				<div class="load__box">
+					<div class="load__card">
+						<div class="load__items">
+							<p class="load__items-title">Windows 10, 64bit</p>
+							<a class="load__items-link" href="">Download</a>
+						</div>
+						<div class="load__image">
+							<img src="../images/load_1.png" alt="">
+						</div>
+					</div>
+					<div class="load__card">
+						<div class="load__items">
+							<p class="load__items-title">Android</p>
+							<a class="load__items-link" href="">Download</a>
+						</div>
+						<div class="load__image phone-img">
+							<img src="../images/load_2.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<ul class="footer__menu">
+						<li class="footer__menu-item"><a class="footer__menu-link" href="#">Публичная оферта</a></li>
+						<li class="footer__menu-item"><a class="footer__menu-link" href="#">Условия пользования</a></li>
+						<li class="footer__menu-item"><a class="footer__menu-link" href="#">Политика
+								конфиденциальности</a></li>
+						<li class="footer__menu-item"><a class="footer__menu-link" href="#">Политика сбора куки</a></li>
+					</ul>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copyright">
+						<p>Starboost by Boosteroid 2021. All right reserved</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</main>
+	<script src="../js/main.js"></script>
+</body>
+
+</html>

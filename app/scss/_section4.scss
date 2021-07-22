@@ -1,0 +1,105 @@
+@import "mixines";
+
+#section4 {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 100px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-bottom: 70px;
+  }
+
+// ANIMATION
+
+  &.active {
+    .content, .image {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.5s;
+    }
+  }
+
+  .content, .image {
+    opacity: 0;
+    transition: 0.5s;
+    @media screen and (max-width: 768px) {
+      @include noAnimation;
+    }
+  }
+
+  .content {
+    transform: translateX(-100%);
+  }
+
+  .image {
+    transform: translateX(100%);
+  }
+
+// ANIMATION END
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      justify-content: space-between;
+    }
+    @media screen and (max-width: 600px) {
+      flex-direction: column-reverse;
+    }
+  }
+  .image {
+    margin-left: 71px;
+    @media screen and (max-width: 768px) {
+      max-width: 240px;
+      margin-left: 25px;
+    }
+    @media screen and (max-width: 600px) {
+      max-width: 133px;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .content {
+    text-align: center;
+    max-width: 344px;
+
+    .intro-text {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #0087E6;
+      margin: 0 0 11px 0;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      text-align: center;
+      color: #FFFFFF;
+      margin: 0 0 16px 0;
+      @media screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #97A4B5;
+      margin: 0 0 20px 0;
+    }
+
+    img {
+      display: inline;
+      &:first-of-type {
+        margin-right: 14px;
+      }
+    }
+  }
+}

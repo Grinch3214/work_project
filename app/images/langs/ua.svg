@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" width="21" height="21">
+	<title>ukr</title>
+	<defs>
+		<image  width="21" height="21" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAMAAACeyVWkAAAAAXNSR0IB2cksfwAAAKhQTFRFAAAAAFCvAFu7AFu7AFu7AFu7AFu7AFu7AFu7AFu7AFu8AFi3AFy8AFu7AFq7AFCvAFu7AFu7AFu7AGC/AFu7AFu7AFu7AFq6AFu6AFu6AFq6WIV7/9UA/9UA/9UA/9UA/9UA/9QA/9UA/9MA/9YA/88A/9QA/9cA/9QA/9UA/9UA/9UA/9UA/9UA/9UA/9QA/9QA/88A/9UA/9UA/9UA/9UA/9UA/9QA05DB5QAAADh0Uk5TAAJAnMfz/+/LlEgEPMM4BGTxaALiROo8QJzI//P/78fMlpRASALDBDzx6jhk4kZGRAHDSJzLlkCPILTkAAAAnUlEQVR4nG3RVxKCQBBF0adAgyAowUwwIQhiDvvfmQWFkvr+zan5mHoD5PX6giiRrAxUDf+GOv0SjdJGY5OqTMsu1HKonjPJ0TCp2XQGaCK1022oHSSaQ2B0AYXRJWRGJay44HrdfASMrrFhdIsdo3uEhw4GERAfW5ik+TynrIHZuVgyvCT1m9dbuXtaPe8eV18UPZ4v33OD9ycszl9XjR3utjSRkAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+</svg>
